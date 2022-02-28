@@ -1,0 +1,103 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/cardview_shadow_end_color"
+    android:id="@+id/item_book">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:paddingStart="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="author"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+                    android:paddingStart="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="normal"/>
+
+                <TextView
+                    android:id="@+id/tvPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="publisher"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+                    android:paddingStart="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="normal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="6dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_baseline_star_rate_24"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:id="@+id/tvRating"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:padding="4dp"
+                        android:textSize="16sp"
+                        android:fontFamily="normal"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvPagesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:padding="3dp"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="normal"/>
+
+                <TextView
+                    android:id="@+id/tvPublishedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:padding="3dp"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="normal"/>
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
